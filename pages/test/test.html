@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        #sub{
+            background-color: cornflowerblue;
+
+        } 
+    </style>
+</head>
+<body>
+    <select name="gender" id="gender" class="form-control">
+        <option value="ذكر">ذكر</option>
+        <option value="انثي">انثي</option>
+    </select>
+    <button type="submit" id="sub">
+        Next Page
+    </button>
+</body>
+  
+ <script>
+    //document.getElementById('gender'); ?]
+    document.querySelector("#sub").addEventListener('click',()=>{
+        const p= document.getElementById('gender');  
+        console.log(p.value);  
+        alert("tets"); 
+    })
+ </script>
+</html>
